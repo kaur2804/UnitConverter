@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Unit Converter</title>
+
+        <style>
+
+*{
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+            /* Set background color for the page */
+            body {
+                background-color:rgb(233, 229, 231);
+                text-align: center;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                border: 5px solid orangered;
+               
+                
+            }
+
+            .container{
+                 margin-top: 100px;
+                 margin-left: 400px;
+                 margin-right: 400px;
+                 margin-bottom: 0px;
+                 border: 2px solid white;
+                 background-color: white;
+                 border-radius: 30px;
+                
+
+            }
+
+            /* Style the h2 tag */
+            h1{
+                font-size: 60px;
+                text-decoration: underline;
+                color: orangered;
+            }
+
+        
+            /* Style the textbox */
+            input[type="text"] {
+                width: 30%;
+                padding: 7px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: 2px solid grey;
+                border-radius: 4px;
+            }
+        
+            /* Style the buttons */
+             button {
+                width: 35%;
+                padding: 12px 20px;
+                margin: 2px;
+                border-radius: 8px;
+                border-color: #e6e6e6;
+                 color: black;
+                 
+            }  
+            button:hover{
+                background-color:orangered;
+            }
+        
+            /* Style the result <p> tag */
+            p {
+                font-size: 18px;
+                margin: 8px 0;    
+            }
+           
+        </style>
+</head>
+<body>
+    
+     
+    <h1> Unit Converter</h1>
+    <hr style = "height: 5px ; background-color:white"> 
+    <div class="container">
+     
+    <label>Enter Number:</label>
+    <input type="text" id = "input_value" placeholder="Enter number" autofocus>
+    <br>
+    <br>
+    <button id = "btn-1"> Celsius to Fahrenheit</button>
+    <button id = "btn-2"> Fahrenheit to Celsius</button>
+    <br>
+    <br>
+    <button id = "btn-3"> Feet to Meters</button>
+    <button id = "btn-4"> Meters to  Feet</button>
+    <br>
+    <br>
+    <button id = "btn-5">  Inches to Centimeters</button>
+    <button id = "btn-6">  Centimeters to Inches</button>
+    <br>
+    <br>
+    <button id = "btn-7"> Pounds to Kilograms</button>
+    <button id = "btn-8"> Kilograms to Pounds</button>
+    <br>
+    <br>
+    <button id ="btn-9"> Clear</button>
+    <br>
+    <br>
+    <p id="result"> </p>
+    </div>
+     <br><br><br><br><br><br><br><br><br>
+    <script type = "text/javascript" src ="Scripts/converter.js"></script>
+    
+</body>
+</html>
